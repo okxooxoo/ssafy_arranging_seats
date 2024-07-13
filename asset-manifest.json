@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.b6ed0af5.css",
-    "main.js": "/static/js/main.d66c7b71.js",
-    "static/js/453.b6ef9009.chunk.js": "/static/js/453.b6ef9009.chunk.js",
-    "index.html": "/index.html",
-    "main.b6ed0af5.css.map": "/static/css/main.b6ed0af5.css.map",
-    "main.d66c7b71.js.map": "/static/js/main.d66c7b71.js.map",
-    "453.b6ef9009.chunk.js.map": "/static/js/453.b6ef9009.chunk.js.map"
+    "main.css": "/ssafy_arranging_seats/static/css/main.b6ed0af5.css",
+    "main.js": "/ssafy_arranging_seats/static/js/main.b0d467dc.js",
+    "static/js/453.b6ef9009.chunk.js": "/ssafy_arranging_seats/static/js/453.b6ef9009.chunk.js",
+    "index.html": "/ssafy_arranging_seats/index.html",
+    "main.b6ed0af5.css.map": "/ssafy_arranging_seats/static/css/main.b6ed0af5.css.map",
+    "main.b0d467dc.js.map": "/ssafy_arranging_seats/static/js/main.b0d467dc.js.map",
+    "453.b6ef9009.chunk.js.map": "/ssafy_arranging_seats/static/js/453.b6ef9009.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b6ed0af5.css",
-    "static/js/main.d66c7b71.js"
+    "static/js/main.b0d467dc.js"
   ]
 }
