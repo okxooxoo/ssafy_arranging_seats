@@ -1,7 +1,7 @@
 .App {
-  width: 100%;
+  min-width: 100vw;
   min-height: 100vh;
-  background-color: #FFF980;
+  background-color: #9de3ff;
   text-align: center;
   font-family: "Nanum Gothic", sans-serif;
 }

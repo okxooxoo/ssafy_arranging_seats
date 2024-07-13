@@ -1,18 +1,10 @@
 import React, { useEffect, useRef } from 'react';
+import { useLocation } from 'react-router-dom';
 import styled from 'styled-components';
 
-const ROW = 4;
-const LEFT_COL = 3;
-const RIGHT_COL = 3;
-
-
 function Home() {
-    const names = [
-        "강희진", "고금강", "구본관", "김서로", "김성일", "김정현",
-        "김준하", "문인규", "박동주", "박윤혜", "박준서", "손정찬",
-        "왕한솔", "유호균", "육종호", "이하진", "이호준", "정혜선",
-        "조희수", "주시현", "진성일", "최민주", "홍권", "황인준",
-    ];
+    const location = useLocation();
+    const { names, row, leftCol, rightCol } = location.state || {};
 
     const shuffleArray = (array) => {
         for (let i = array.length - 1; i > 0; i--) {
@@ -51,7 +43,7 @@ function Home() {
     return (
         <HomeLayout>
             <Screen>Screen</Screen>
-            {createTable(ROW, LEFT_COL, RIGHT_COL, names)}
+            {createTable(row, leftCol, rightCol, names)}
         </HomeLayout>
     );
 }
