@@ -1,11 +1,11 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import styled from 'styled-components';
 
 function Home() {
     const location = useLocation();
     const { names, row, leftCol, rightCol } = location.state || {};
-
+    
     const shuffleArray = (array) => {
         for (let i = array.length - 1; i > 0; i--) {
           const j = Math.floor(Math.random() * (i + 1));
@@ -40,10 +40,20 @@ function Home() {
         return tableRows;
     };
 
+    const handleRefreshClick = () => {
+        const updatedTableData = createTable(row, leftCol, rightCol, names);
+        setTableData(updatedTableData);
+    };
+
+    const [tableData, setTableData] = useState(createTable(row, leftCol, rightCol, names));
+
     return (
         <HomeLayout>
             <Screen>Screen</Screen>
-            {createTable(row, leftCol, rightCol, names)}
+            {tableData}
+            <RefreshBtn onClick={handleRefreshClick}>
+                다시 뽑기
+            </RefreshBtn>
         </HomeLayout>
     );
 }
@@ -94,6 +104,24 @@ const Table = styled.div`
     margin: 10px;
     justify-content: center;
     align-items: center;
+`;
+
+const RefreshBtn = styled.div`
+    position: fixed;
+    z-index: 1;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding: 14px;
+    margin: 28px;
+    border-radius: 20px;
+    transition: transform 0.3s ease-in-out;
+    align-self: flex-end;
+
+    &:hover {
+        transform: scale(1.1);
+    }
 `;
 
 export default Home;
