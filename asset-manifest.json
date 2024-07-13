@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/ssafy_arranging_seats/static/css/main.46f6ac85.css",
-    "main.js": "/ssafy_arranging_seats/static/js/main.372cabcc.js",
+    "main.js": "/ssafy_arranging_seats/static/js/main.7d84e6e3.js",
     "static/js/453.b6ef9009.chunk.js": "/ssafy_arranging_seats/static/js/453.b6ef9009.chunk.js",
     "index.html": "/ssafy_arranging_seats/index.html",
     "main.46f6ac85.css.map": "/ssafy_arranging_seats/static/css/main.46f6ac85.css.map",
-    "main.372cabcc.js.map": "/ssafy_arranging_seats/static/js/main.372cabcc.js.map",
+    "main.7d84e6e3.js.map": "/ssafy_arranging_seats/static/js/main.7d84e6e3.js.map",
     "453.b6ef9009.chunk.js.map": "/ssafy_arranging_seats/static/js/453.b6ef9009.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.46f6ac85.css",
-    "static/js/main.372cabcc.js"
+    "static/js/main.7d84e6e3.js"
   ]
 }
