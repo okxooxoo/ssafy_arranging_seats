@@ -5,12 +5,7 @@ import { DeleteIcon } from '../icons/icon';
 
 function Config() {
     const [newName, setNewName] = useState("");
-    const [names, setNames] = useState([
-        "강희진", "고금강", "구본관", "김서로", "김성일", "김정현",
-        "김준하", "문인규", "박동주", "박윤혜", "박준서", "손정찬",
-        "왕한솔", "유호균", "육종호", "이하진", "이호준", "정혜선",
-        "조희수", "주시현", "진성일", "최민주", "홍권", "황인준",
-    ]);
+    const [names, setNames] = useState([]);
     const [row, setRow] = useState(4);
     const [leftCol, setLeftCol] = useState(3);
     const [rightCol, setRightCol] = useState(3);
