@@ -57,19 +57,23 @@ function Config() {
     };
 
     const handleRandomizeSeats = () => {
-        navigate('/result', {
-            state: {
-                names,
-                row,
-                leftCol,
-                rightCol,
-            },
-        });
+        if (row * (leftCol + rightCol) >= names.length) {
+            navigate('/result', {
+                state: {
+                    names,
+                    row,
+                    leftCol,
+                    rightCol,
+                },
+            });
+        } else {
+            alert("책상 수보다 학생 수가 더 많습니다!");
+        }
     };
 
     return (
         <ConfigLayout>
-            <Title>SSAFY 12기 14반</Title>
+            <Title>SSAFY 12기 서울 14반</Title>
             <InputLabel>
                 <label>
                     행 수
@@ -135,6 +139,7 @@ const ConfigLayout = styled.div`
 
 const Title = styled.div`
     font-size: 44px;
+    font-weight: bold;
     margin: 28px;
 `;
 
