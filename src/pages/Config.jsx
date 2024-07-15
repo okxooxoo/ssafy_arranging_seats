@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import { DeleteIcon } from '../icons/icon';
+// import ssafy from '/ssafy.png';
 
 function Config() {
     const [newName, setNewName] = useState("");
@@ -68,7 +69,7 @@ function Config() {
 
     return (
         <ConfigLayout>
-            <Title>SSAFY 12기 서울 14반</Title>
+            <TitleImg alt='ssafy' src={`${process.env.PUBLIC_URL}/ssafy.png`} />
             <InputLabel>
                 <label>
                     행 수
@@ -132,10 +133,9 @@ const ConfigLayout = styled.div`
     width: 100%;
 `;
 
-const Title = styled.div`
-    font-size: 44px;
-    font-weight: bold;
-    margin: 28px;
+const TitleImg = styled.img`
+    width: 280px;
+    height: auto;
 `;
 
 const InputLabel = styled.div`
